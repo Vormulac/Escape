@@ -1,0 +1,10 @@
+#include "include\params.hpp"
+
+Respawn = "BASE";
+disabledAI = 1;
+enableDebugConsole = 2;
+
+class CfgFunctions
+{
+	#include "include\functions.hpp"
+};
