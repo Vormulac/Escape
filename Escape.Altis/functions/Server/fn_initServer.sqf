@@ -1,5 +1,5 @@
 //waituntil{!isNil("BIS_fnc_init")};
-if(!isServer) exitwith {};
+if(!isserver) exitwith {};
 ["Server started."] spawn a3e_fnc_debugChat;
 //Parse the parameters
 call a3e_fnc_parameterInit;
@@ -28,3 +28,5 @@ A3E_VillageMarker = ["Village_"] call a3e_fnc_getMarkerList;
 [] spawn A3E_fnc_initSearchLeader;
 
 [] spawn A3E_fnc_CreateComCenters;
+
+[] spawn A3E_fnc_Chronos_Init;

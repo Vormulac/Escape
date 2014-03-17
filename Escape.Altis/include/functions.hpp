@@ -10,7 +10,7 @@ class A3E
                     file = "config.sqf";
                     preInit = 1; // 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
                     postInit = 0; // 1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
-                    recompile = 1; // 1 to recompile the function upon mission start
+                   // recompile = 1; // 1 to recompile the function upon mission start
             };
             class WriteParamBriefing {};
             class CountPlayers {};
@@ -45,19 +45,24 @@ class A3E
 	};
 	class Server
 	{
-            class initServer {
-                    preInit = 0; // 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
-                    postInit = 1; // 1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
-                    recompile = 1; // 1 to recompile the function upon mission start
-            };
-            class parameterInit {}; 
-            class createComCenters {};
-            class createAmmoDepots {};
-            class HCExec {};
-            class parseBaseMarkers {}; //Obsolet
-            class RunExtraction {};
-            class AddHijackAction {};
-            class CreateExtractionPoint {};
+		class initServer {
+				preInit = 0; // 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
+				postInit = 1; // 1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+			   // recompile = 1; // 1 to recompile the function upon mission start
+		};
+		 class preInitServer {
+				preInit = 1; // 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
+				postInit = 0; // 1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+			   // recompile = 1; // 1 to recompile the function upon mission start
+		};
+		class parameterInit {}; 
+		class createComCenters {};
+		class createAmmoDepots {};
+		class HCExec {};
+		class parseBaseMarkers {}; //Obsolet
+		class RunExtraction {};
+		class AddHijackAction {};
+		class CreateExtractionPoint {};
 
 	};
         class Searchleader 
@@ -86,4 +91,5 @@ class A3E
             class AmmoDepot {};
             class BasicRoadBlock {};         
 	};
+	#include "chronos.hpp"
 };

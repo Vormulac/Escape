@@ -23,7 +23,6 @@ class Mission
 	randomSeed=11703990;
 	class Intel
 	{
-		briefingName="Escape 2 Test";
 		resistanceWest=0;
 		startWeather=0.29999998;
 		startWind=0.099999994;

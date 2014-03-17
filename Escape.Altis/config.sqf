@@ -6,6 +6,7 @@ call compile preprocessFileLineNumbers ("islands\"+ worldName +"\CommunicationCe
 
 A3E_Debug = true; //Can be overwritten by parameters
 
+
 //Settings
 //Side and Faction of Player [Side,Faction]
        
