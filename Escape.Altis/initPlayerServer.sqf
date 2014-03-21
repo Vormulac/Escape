@@ -16,6 +16,6 @@ if(name _player == "HC") then {
     publicVariable "A3E_Players";
 
     waituntil{sleep 0.1; count(A3E_StartPos)>0};
-   // _player setpos [(A3E_StartPos select 0)+random 5.0-2.5,(A3E_StartPos select 1)+random 5.0-2.5,0];
-   // _player setdir (random 360);
+    _player setpos [(A3E_StartPos select 0)+random 5.0-2.5,(A3E_StartPos select 1)+random 5.0-2.5,0];
+    _player setdir (random 360);
 };

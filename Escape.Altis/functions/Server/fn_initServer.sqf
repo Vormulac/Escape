@@ -16,17 +16,17 @@ _fenceRotateDir = random 360;
 // Add crashsite here
 //##############
 
-//[] call A3E_fnc_createComCenters;
-//[] call A3E_fnc_createAmmoDepots;
+
 
 //[] call A3E_fnc_parsebaseMarkers;
 A3E_BaseMarker = ["Base_"] call a3e_fnc_getMarkerList;
 A3E_VillageMarker = ["Village_"] call a3e_fnc_getMarkerList;
 
-[] spawn A3E_fnc_createRegions;
+//[] spawn A3E_fnc_createRegions;
 
 [] spawn A3E_fnc_initSearchLeader;
 
 [] spawn A3E_fnc_CreateComCenters;
+[] spawn A3E_fnc_createAmmoDepots;
 
 [] spawn A3E_fnc_Chronos_Init;

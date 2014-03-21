@@ -15,6 +15,8 @@ class A3E
             class WriteParamBriefing {};
             class CountPlayers {};
             class GetPlayers {};
+			class GetNearestPlayerDistance {};
+			class GetCircularSpawnPos {};
             class RotatePosition {};
             class findFlatArea{};
             class groupChat {};

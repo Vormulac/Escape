@@ -17,7 +17,6 @@ class Mission
 		"a3_characters_f_beta",
 		"A3_Characters_F_Civil",
 		"a3_characters_f_gamma",
-		"A3_Soft_F_MRAP_01",
 		"a3_map_altis"
 	};
 	randomSeed=11703990;
@@ -50,7 +49,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={12808.995,87.696861,16667.889};
+					position[]={13445.703,14.91818,16369.953};
 					azimut=1.2354701;
 					id=0;
 					side="WEST";
@@ -135,50 +134,6 @@ class Mission
 					description="Headless Client";
 				};
 			};
-		};
-	};
-	class Vehicles
-	{
-		items=5;
-		class Item0
-		{
-			position[]={12793.325,87.689362,16656.84};
-			id=5;
-			side="EMPTY";
-			vehicle="B_MRAP_01_F";
-			skill=0.60000002;
-		};
-		class Item1
-		{
-			position[]={12799.227,87.71048,16656.904};
-			id=6;
-			side="EMPTY";
-			vehicle="B_MRAP_01_F";
-			skill=0.60000002;
-		};
-		class Item2
-		{
-			position[]={12805.129,87.696121,16656.971};
-			id=7;
-			side="EMPTY";
-			vehicle="B_MRAP_01_F";
-			skill=0.60000002;
-		};
-		class Item3
-		{
-			position[]={12810.441,87.67305,16656.77};
-			id=8;
-			side="EMPTY";
-			vehicle="B_MRAP_01_F";
-			skill=0.60000002;
-		};
-		class Item4
-		{
-			position[]={12815.884,87.960739,16656.902};
-			id=9;
-			side="EMPTY";
-			vehicle="B_MRAP_01_F";
-			skill=0.60000002;
 		};
 	};
 	class Markers
