@@ -29,4 +29,6 @@ A3E_VillageMarker = ["Village_"] call a3e_fnc_getMarkerList;
 [] spawn A3E_fnc_CreateComCenters;
 [] spawn A3E_fnc_createAmmoDepots;
 
-[] spawn A3E_fnc_Chronos_Init;
+[] call A3E_fnc_Chronos_Init;
+
+["A3E_FNC_AmbientAISpawn"] call A3E_FNC_Chronos_Register;

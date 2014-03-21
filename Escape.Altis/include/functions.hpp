@@ -24,6 +24,7 @@ class A3E
             class getBuildingsInMarker {};
             class calcMarkerArea {};
             class Hijack {};
+			class GetSideColor;
 	};
 	class AI
 	{
@@ -34,6 +35,7 @@ class A3E
             class move;
             class SetTaskState;
             class GetTaskState;
+			class AmbientAISpawn;
             //class createGroup;
            // class createUnit;
 	};

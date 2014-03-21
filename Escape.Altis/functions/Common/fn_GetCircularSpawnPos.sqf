@@ -13,6 +13,6 @@ for "_x" from 1 to 10 do {
 	_dir = random 360;
 	_pos = [(_pos select 0)+cos(_dir)*_distance,(_pos select 1)+sin(_dir)*_distance,0];
 	_nearestPlayerDis = [_pos] call A3E_fnc_GetNearestPlayerDistance;
-	if(_nearestPlayerDis>=A3E_MinSpawnCircleDistance) exitwith {_return = _pos;};
+	if(_nearestPlayerDis>=A3E_MinSpawnCircleDistance &&  !(surfaceIsWater _pos)) exitwith {_return = _pos;};
 };
 _return

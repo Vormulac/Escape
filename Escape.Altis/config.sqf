@@ -17,6 +17,8 @@ A3E_LocalSide = 2;
 A3E_EnemySide = 0;
 
 
+A3E_MaxAmbientAIGroups = 20;
+
 A3E_TeamLeaders = [
 ["O_Soldier_TL_F"],//East
 ["B_soldier_TL_F"],//West
@@ -47,7 +49,7 @@ A3E_HC_ID = 0;
 A3E_TriggerMethod = 0; //### 0 : Chronos - 1 : Trigger per Area - 2 : Regions
 
 //Spawning
-A3E_MinSpawnCircleDistance = 1000;
+A3E_MinSpawnCircleDistance = 800;
 A3E_MaxSpawnCircleDistance = 2000;
 
 //Creating Sides
