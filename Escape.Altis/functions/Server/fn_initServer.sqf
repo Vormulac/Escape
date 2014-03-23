@@ -5,6 +5,8 @@ if(!isserver) exitwith {};
 call a3e_fnc_parameterInit;
 
 [1] call compile preprocessFileLineNumbers "Scripts\Escape\UnitClasses.sqf";
+[1] call compile preprocessFileLineNumbers "functions\debug\fn_TrackGroup.sqf";
+[1] call compile preprocessFileLineNumbers "functions\RandomEvents\fn_RandomEvents.sqf";
 
 A3E_StartPos = [] call a3e_fnc_findFlatArea;
 
@@ -31,4 +33,7 @@ A3E_VillageMarker = ["Village_"] call a3e_fnc_getMarkerList;
 
 [] call A3E_fnc_Chronos_Init;
 
+
 ["A3E_FNC_AmbientAISpawn"] call A3E_FNC_Chronos_Register;
+["A3E_FNC_TrackGroup_Update"] call A3E_FNC_Chronos_Register;
+["A3E_FNC_RandomEvent_Run"] call A3E_FNC_Chronos_Register;

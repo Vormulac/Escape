@@ -41,9 +41,8 @@ class A3E
 	};
 	class Debug
 	{
-            class unit_debug_marker {};
             class drawMapLine {};
-            class trackGroup {};
+            //class trackGroup {};
             class rptLog {};
             class debugChat {};
 	};

@@ -6,7 +6,9 @@ _pos = [];
 
 A3E_MinSpawnCircleDistance = 1000;
 A3E_MaxSpawnCircleDistance = 2000;
-
+if(time<6) then {
+	A3E_MinSpawnCircleDistance = 300;
+};
 for "_x" from 1 to 10 do {
 	_pos = getposASL (_list select floor(random(count(_list))));
 	_distance = A3E_MinSpawnCircleDistance + random(A3E_MaxSpawnCircleDistance-A3E_MinSpawnCircleDistance);

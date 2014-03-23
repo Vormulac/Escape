@@ -21,7 +21,7 @@ if(count(_spawnpos)==3) then {
 	_group = [_spawnpos,A3E_EnemySide,4] call A3E_FNC_SpawnGroup;
 	A3E_AmbientAIGroups set [count(A3E_AmbientAIGroups),_group];
 	[_group] call A3E_fnc_Patrol;
-	[_group] spawn A3E_fnc_TrackGroup;
+	[_group] spawn A3E_fnc_TrackGroup_Add;
 };
 
 
